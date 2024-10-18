@@ -1,0 +1,129 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.5s;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff6f61, #de6254);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Selected Button Effect */
+button.selected {
+    background: linear-gradient(90deg, #ff5f6d, #ffc371);
+    transform: scale(1.1);
+}
+
+/* Picked Student Name Display */
+.student-name {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in;
+    background: linear-gradient(90deg, #178703, #310d02);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Hidden Elements */
+.hidden {
+    display: none;
+}
+
+/* Reset Button Styling */
+#reset-btn {
+    background-color: #4caf50;
+    color: white;
+    margin-top: 20px;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+#reset-btn:hover {
+    background-color: #45a049;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
