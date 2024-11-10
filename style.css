@@ -1,23 +1,27 @@
+/* General Body Styling */
 body {
-    background-color: black; /* Set the background color to black */
-    color: white; /* Change text color to white for visibility */
-    font-family: Arial, sans-serif; /* Set a default font */
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.5s;
 }
 
+/* Container Styling */
 .container {
-    background-color: #222; /* Dark gray background for the container */
-    padding: 20px; /* Add some padding */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
-    max-width: 400px; /* Max width for the container */
-    margin: 50px auto; /* Center the container */
-    text-align: center; /* Center text inside the container */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in;
 }
-
-.hidden {
-    display: none; /* Keep the hidden class to hide elements */
-}
-
 
 /* Heading Styling */
 h1 {
